@@ -6,13 +6,13 @@ Repository for the paper *"Cross-Modal Transfer from Memes to Videos: Addressing
 
 This work explores using meme datasets to fine-tune models for hateful video detection, addressing data scarcity in video datasets. Initial experiments revealed performance gaps due to inconsistencies in label definitions. To mitigate this, we implemented a model-prediction-driven, human-assisted re-annotation pipeline, aligning meme labels with video dataset standards. The pipeline integrates meme dataset labels, model predictions via few-shot prompting, and human annotations through majority voting. Fine-tuning on re-annotated meme datasets achieved performance comparable to video-trained models, demonstrating their utility as substitutes. We utilized Facebook Hateful Memes (FHM) and MAMI datasets as sources and targeted MultiHateClip (MHC) and HateMM as video datasets, fine-tuning large vision-language models, LLaMA-3.2-11B and LLaVA-Next-Video-7B.
 
-<img src="images/finetuning_pipeline.png" alt="Fine-tuning Pipeline" width="400">
+<img src="images/finetuning_pipeline.png" alt="Fine-tuning Pipeline" width="550">
 
 ## Re-annotation Pipeline
 
 The re-annotation process combines original meme labels, model predictions, and human annotations to align with video label definitions. Predictions were generated using state-of-the-art vision-language models (e.g., LLaMA-3.2-11B) with few-shot prompting, where memes were queried using structured prompts without labels for prediction. Final labels were determined via majority voting to ensure consistency with video datasets.
 
-<img src="re_annotation_pipeline.png" alt="Re-annotation Pipeline" width="400">
+<img src="images/re_annotation_pipeline.png" alt="Re-annotation Pipeline" width="550">
 
 
 ## Substitution Results
