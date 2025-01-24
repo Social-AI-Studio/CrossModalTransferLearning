@@ -19,8 +19,8 @@ output_path = "" # path to store prediction results
 
 mode = "video"
 few_shot = 0
-label_dict = {"hatemm": {0: "non-hateful", 1:"non-hateful", 2:"hateful"},
-            "mhc": {0: "non-offensive", 1:"offensive", 2:"offensive"}}
+label_dict = {"hatemm": {0: "non-hateful", 1:"hateful"},
+        "mhc": {0: "non-offensive", 1:"offensive"}}
 
 FEW_SHOT_LST = {
     "hatemm": ['non_hate_video_1', 'hate_video_67', 'hate_video_131', 'non_hate_video_276', 'hate_video_226', 'non_hate_video_350', 'hate_video_307', 'non_hate_video_418'],

@@ -17,8 +17,8 @@ torch.cuda.empty_cache()
 dataset_path = "" # path to load annotated dataset
 output_dir = "" # path to store model check point
 
-label_dict = {"hatemm": {0: "non-hateful", 1:"non-hateful", 2:"hateful"},
-        "mhc": {0: "non-offensive", 1:"offensive", 2:"offensive"}}
+label_dict = {"hatemm": {0: "non-hateful", 1:"hateful"},
+        "mhc": {0: "non-offensive", 1:"offensive"}}
 for key in label_dict:
     if(key in dataset_path):
         dataset_name = key
